@@ -5,4 +5,4 @@ The order of execution was as such:
 2. invoke-from-env.ps1
 3. invoke-from-registry.ps1
 4. invoke-from-remote.ps1
-5. info-stealer service
+5. info-steal.ps1
