@@ -17,7 +17,7 @@ I've noticed some weird usage of CPU and network communications on my machine. A
 
 The value of `-Command` is the contents of the file `invoke-from-env.ps1`.
 
-This command retrieves the contents of an environment variable `9964a802` (which is a weird name for a variable like that). And executes the script contained within. The contents of that script are located within `invoke-from-registry.ps1`;
+This command retrieves the contents of an environment variable `9964a802` (which is a weird name for a variable like that), and executes the script contained within. The contents of that script are located within `invoke-from-registry.ps1`;
 
 ## 2. Invoke from Registry
 The command from the environment variable finds and executes the script contained within a registry key under `HKLM:\SOFTWARE\Microsoft\ALG` named `9964a802`. The contents of that registry key are within the file `invoke-from-remote.ps1`.
