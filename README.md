@@ -23,7 +23,7 @@ This command retrieves the contents of an environment variable `9964a802` (which
 The command from the environment variable finds and executes the script contained within a registry key under `HKLM:\SOFTWARE\Microsoft\ALG` named `9964a802`. The contents of that registry key are within the file `invoke-from-remote.ps1`.
 
 ## 3. Invoke from Remote
-This is a more involved script which checks a set of domains, obfuscated by splicing (within these domains is the domain `activatorcounter.com`), for updates using dns. On update, it retrieves another script from the domain and executes it. The contents of that script are located within `invoke-from-remote-2.ps1`.
+This is a more involved script which checks a set of domains, obfuscated by splicing (within these domains is the domain `activatorcounter.com`), for updates. On update, it retrieves another script from the domain and executes it. The contents of that script are located within `invoke-from-remote-2.ps1`.
 
 ## 4. Invoke from Remote 2
 This script retrieves the final info-stealer script in an encrypted form from `https://activatorcounter.com/connect` using a Rest method. Then it decrypts it using an embedded DFC key. Finally, the script is executed. The contents of that script are within `info-steal.ps1`
